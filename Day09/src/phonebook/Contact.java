@@ -2,8 +2,10 @@ package phonebook;
 
 public class Contact {
 	
-	int idx;
-	String pnum;
-	String name;
+	private int idx;
+	private String pnum;
+	private String name;
+	
+	
 	
 }
