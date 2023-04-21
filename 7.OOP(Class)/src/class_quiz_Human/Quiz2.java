@@ -9,17 +9,20 @@ public class Quiz2 {
 		
 		String[] arr = new String[3];
 		
-		
-		System.out.printf("전체 인원 수 : %d\n", Human.getPopulation());	// 전체 Human 객체의 개수가 출력되도록 해주세요(0)
+		// 전체 Human 객체의 개수가 출력되도록 해주세요(0)
+		System.out.printf("전체 인원 수 : %d\n", Human.getPopulation());
 		
 		Human ob1 = new Human("김용민");
 		Human ob2 = new Human("한승록");
 		
-		System.out.printf("전체 인원 수 : %d\n", Human.getPopulation());	// 전체 Human 객체의 개수가 추력되도록 해주세요(2)
+		// 전체 Human 객체의 개수가 추력되도록 해주세요(2)
+		System.out.printf("전체 인원 수 : %d\n", Human.getPopulation());	
 		
 		Human ob3 = new Human("유정현");
 		
-		System.out.printf("전체 인원 수 : %d\n", Human.getPopulation());	// 전체 Human 객체의 개수가 출력되도록 해주세요(3)
+		// 전체 Human 객체의 개수가 출력되도록 해주세요(3)
+		System.out.printf("전체 인원 수 : %d\n", Human.getPopulation());
+		
 		
 		String name = ob1.getName();
 		arr[0] = name;
