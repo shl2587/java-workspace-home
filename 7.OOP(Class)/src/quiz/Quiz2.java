@@ -27,8 +27,8 @@ class Card {
 				for (int j = 0; j < width; j++)
 					System.out.print("─");
 			else {
-				for (int j = 0; j < width; j++) {
-					if (j == width / 2 && (i >= height / 2 - num / 2 && i <= height / 2 + num / 2)) {
+				for (int j = 0; j < width; j++) {	// 변수 p의 위치 설정
+					if (j == width / 2 && (i >= height / 2 - num / 2 && i <= height / 2 + num / 2)) {	
 						if (num % 2 == 0 && i == height / 2)
 							System.out.print(" ");
 						else
