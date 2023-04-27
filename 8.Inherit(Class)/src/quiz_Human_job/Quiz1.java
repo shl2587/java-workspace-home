@@ -51,6 +51,8 @@ public class Quiz1 {
 	// 부모 클래스인 Human 클래스로 각각 객체 생성하여 부모클래스의 메서드 작동여부 확인
 	Human doctor = new Human(doc, d_age);
 	Human student = new Human(stu, s_age);
+	
+	Human d = new Doctor(doc, d_age);
 	doctor.introduce();
 	student.introduce();
 	System.out.println();
