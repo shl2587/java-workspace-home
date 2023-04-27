@@ -52,7 +52,7 @@ public class Quiz1 {
 	Human doctor = new Human(doc, d_age);
 	Human student = new Human(stu, s_age);
 	
-	Human d = new Doctor(doc, d_age);
+	
 	doctor.introduce();
 	student.introduce();
 	System.out.println();
