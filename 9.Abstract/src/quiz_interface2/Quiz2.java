@@ -29,6 +29,9 @@ public class Quiz2 {
 		System.out.println(hm.give(dog));
 		System.out.println(fr.give(cat));
 		
+		Human hmfr = new Human(manName);
+		System.out.println(hmfr.give(cat));
+		
 		
 		
 		sc.close();

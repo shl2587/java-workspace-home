@@ -13,14 +13,26 @@ public class Human implements Animal{
 	public String give(Animal name) {	// 출력할 내용을 담을 give함수 작성
 		if (name instanceof Dog) {		// instanceof로 객체 타입 확인하여 Dog클래스 객체이면
 			feed = "개껌";				// feed에 개껌을 저장하고
-			// 강아지 주인 이름과 강아지 이름, 개껌을 넣을 format메서드 반환 
-			return String.format("%s(이)가 %s에게 %s(을)를 줍니다\n", humanName, ((Dog)name).getName(), feed);
+			// 강아지 주인 이름과 강아지 이름, 개껌을 넣을 format메서드 반환
+			if (humanName.equals("철수")) {
+				return String.format("%s(이)가 %s에게 %s(을)를 줍니다\n", humanName, ((Dog)name).getName(), feed);				
+			}
+			else {
+				humanName = "친구";
+				return String.format("%s(이)가 %s에게 %s(을)를 줍니다\n", humanName, ((Dog)name).getName(), feed);				
+			}
 		}
 		
 		if (name instanceof Cat) {		// instanceof로 객체 타입 확인하여 Cat클래스 객체이면
 			feed = "츄르";				// feed에 츄르를 저장하고
 			// 고양이 주인 이름과 고양이 이름, 츄르를 넣을 format메서드 반환
-			return String.format("%s(이)가 %s에게 %s(을)를 줍니다\n", humanName, ((Cat)name).getName(), feed);
+			if (humanName.equals("영희")) {
+				return String.format("%s(이)가 %s에게 %s(을)를 줍니다\n", humanName, ((Cat)name).getName(), feed);
+			}
+			else {
+				humanName = "친구";
+				return String.format("%s(이)가 %s에게 %s(을)를 줍니다\n", humanName, ((Cat)name).getName(), feed);
+			}
 		}
 		
 		else {	// 모두가 아니면 null을 반환
