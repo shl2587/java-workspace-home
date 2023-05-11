@@ -33,10 +33,6 @@ class Count implements Runnable{	// run메서드를 오버라이딩하기 위해
 	public void setResult(String result) {
 		this.result = result;
 	}
-	
-	
-		
-	
 }
 
 public class TimerQuiz {
@@ -68,10 +64,10 @@ public class TimerQuiz {
 		
 		if (result != null) {	// 정답이 입력되었을때
 			if (answer.equals(result)) {	// 저장된 정답과 같으면
-				System.out.println("정답입니다!!!");		// 해당 구문 출력
+				System.out.println("정답입니다!!!");	// 해당 구문 출력
 			}
 			else {							// 저장된 정답과 다르면
-				System.err.println("오답입니다!!!");		//	해당 구문 출력	
+				System.err.println("오답입니다!!!");	//	해당 구문 출력	
 			}
 		}
 		
