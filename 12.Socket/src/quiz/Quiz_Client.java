@@ -33,10 +33,15 @@ public class Quiz_Client {
 		bw.write(text);						// 입력받은 대상을 bw에 넣는다
 		bw.newLine();						// 한줄 바꾼다
 		bw.flush();							// flush해서 버퍼 내용을 밀어서 보낸다
+<<<<<<< HEAD
 		
 		
 		pw.close();							
 		so.close();
+=======
+		pw.close();							
+		
+>>>>>>> branch 'java-study' of https://github.com/shl2587/java-workspace-home.git
 		sc.close();
 	}
 }
